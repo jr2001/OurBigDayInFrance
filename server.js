@@ -21,3 +21,36 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
     console.log('Our app is running on port:' + port);
 });
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Grid, Row, Col, Button } from 'react-bootstrap'
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+
+class App extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      Title:"John & Lorraine's Wedding ",
+      subTitle:"So French, So Chic",
+    }
+  }
+  componentWillMount(){
+  }
+  render() {
+    return (
+        <Grid>
+          <Row>
+              <div className="App-header">
+                <h2><div className="largej">{this.state.Title}</div>
+                  <div className="smallj">{this.state.subTitle}</div>
+                </h2>
+              </div>
+            </Row>
+          </Grid>
+    );
+  }
+}
