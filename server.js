@@ -23,29 +23,3 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
     console.log('Our app is running on port:' + port);
 });
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
-
-class App extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-      Title:"John & Lorraine's Wedding ",
-      subTitle:"So French, So Chic",
-    }
-  }
-  componentWillMount(){
-  }
-  render() {
-    return (
-      <div className="App-header">
-        <h2><div className="largej">{this.state.Title}</div>
-          <div className="smallj">{this.state.subTitle}</div>
-        </h2>
-      </div>
-    );
-  }
-}
