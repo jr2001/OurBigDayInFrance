@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, Button } from 'react-bootstrap'
-import ReactDOM from 'react-dom';
+
 
 const path = require('path')
 const webpack = require('webpack')
