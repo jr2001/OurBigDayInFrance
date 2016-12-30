@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Grid, Row, Col, Button } from 'react-bootstrap'
-
 var express = require('express');
 var app = express();
 
