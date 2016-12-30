@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Grid, Row, Col, Button } from 'react-bootstrap'
+
 var express = require('express');
 var app = express();
 
@@ -21,9 +25,6 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
     console.log('Our app is running on port:' + port);
 });
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid, Row, Col, Button } from 'react-bootstrap'
 
 ReactDOM.render(
   <App />,
