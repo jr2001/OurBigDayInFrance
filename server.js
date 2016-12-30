@@ -43,15 +43,11 @@ class App extends Component {
   }
   render() {
     return (
-        <Grid>
-          <Row>
-              <div className="App-header">
-                <h2><div className="largej">{this.state.Title}</div>
-                  <div className="smallj">{this.state.subTitle}</div>
-                </h2>
-              </div>
-            </Row>
-          </Grid>
+      <div className="App-header">
+        <h2><div className="largej">{this.state.Title}</div>
+          <div className="smallj">{this.state.subTitle}</div>
+        </h2>
+      </div>
     );
   }
 }
